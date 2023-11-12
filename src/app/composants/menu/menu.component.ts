@@ -7,6 +7,10 @@ import { menu } from './menu';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+
+
+  //accordion 
+  panelExpanded = true;
 //create menu objectes  menu prop 
 public menuProperties : Array<menu> = [
   {

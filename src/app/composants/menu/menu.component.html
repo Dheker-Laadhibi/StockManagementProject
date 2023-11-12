@@ -1,7 +1,9 @@
+
 <div id="accordion" class="accordion">
   <div class="card" *ngFor="let menu of menuProperties">
-    <div class="card-header" id="{{ menu.id }}">
+    <div class="card-header pointer" (click)="panelExpanded=!panelExpanded" id="{{ menu.id }}">
       <h5 class="mb-0">
+        <!--button -->
         <button
           class="btn btn-link btn-block text-left"
           type="button"
@@ -14,15 +16,19 @@
         </button>
       </h5>
     </div>
-
-    <div
-      id="{{ menu.id }}"
-      class="collapse show"
-      [attr.aria-labelledby]="'#menu' + menu.id"
-      data-parent="#accordionExample"
-      *ngFor="let sousmenu of menu.sousMenu"
-    >
-      {{ sousmenu.titre }}
-    </div>
+ <!--card body -->
+ <div *ngIf="panelExpanded">
+  <div
+  id="{{ menu.id }}"
+  class="collapse show"
+  [attr.aria-labelledby]="'#menu' + menu.id"
+  data-parent="#accordionExample"
+ 
+  *ngFor="let sousmenu of menu.sousMenu"
+ 
+>
+  {{ sousmenu.titre }}
+</div></div>
+    
   </div>
 </div>
