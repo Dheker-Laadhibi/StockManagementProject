@@ -23,7 +23,7 @@ component:PageInscriptionComponent
   children:[
 
 {
-  path :'statistique',
+  path :'statistique1',
   component:PageStatistiquesComponent
 }
 
