@@ -52,7 +52,7 @@ sousMenu:[
       id:'21',
       titre:'articles ',
       icon:'',
-      url:'',
+      url:'articles',
   
     },
     {

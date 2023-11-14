@@ -4,6 +4,7 @@ import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
 import { PageDashbordComponent } from './page-dashbord/page-dashbord.component';
 import { PageStatistiquesComponent } from './page-statistiques/page-statistiques.component';
+import { ArticleComponent } from './composants/article/article.component';
 
 const routes: Routes = [
 
@@ -25,6 +26,9 @@ component:PageInscriptionComponent
 {
   path :'statistique1',
   component:PageStatistiquesComponent
+},{
+  path :'articles',
+  component :ArticleComponent
 }
 
   ]
