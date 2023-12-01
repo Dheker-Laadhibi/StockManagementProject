@@ -1,0 +1,70 @@
+<div class="col mt-4">
+  <div class="col-md-12 mt-2">
+    <div class="col-md-10 styleh2 text-center bottomstyle">
+      <h2>
+      
+        &nbsp;AjouterCategorie
+      </h2>
+    </div>
+    <div class="col-md-12  mt-4">
+      <form class="marinform" (ngSubmit)="saveCategory(categoryForm)" #categoryForm="ngForm">
+        <div class="row  mt-4 justify-content-center align-items-center mb-4">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              name="codeCategory"
+              [(ngModel)]="categorie.codecategorie"
+              required
+              placeholder="Code Article"
+            />
+          </div>
+        </div>
+        <div class="row  justify-content-center align-items-center ">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              name="designation"
+              [(ngModel)]="categorie.designation"
+              required
+              placeholder="Designation"
+            />
+          </div>
+        </div>
+         
+     
+
+        <div class="col-md-12 text-center mt-3">
+          <button class="btn btn-primary mx-2" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-floppy-fill"
+              viewBox="0 0 16 16"
+            >
+              <!-- Le contenu de votre icône -->
+            </svg>
+            &nbsp;Enregistrer
+          </button>
+
+          <button class="btn btn-danger mx-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-ban"
+              viewBox="0 0 16 16"
+            >
+              <!-- Le contenu de votre icône -->
+            </svg>
+            &nbsp;Annuler
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

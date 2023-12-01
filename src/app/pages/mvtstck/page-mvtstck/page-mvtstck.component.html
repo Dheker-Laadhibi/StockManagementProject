@@ -1,0 +1,83 @@
+<div class="col">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Mouvements du stock</h1>
+    </div>
+    <div class="col-md-4 text"><app-buttons></app-buttons></div>
+  </div>
+  <div class="col mb-3">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            <app-detaille-mvt-article
+              class="custom-width"
+            ></app-detaille-mvt-article>
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+          style="max-height: 300px; overflow-y: scroll"
+        >
+          <div class="accordion-body">
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+          </div>
+        </div>
+      </div>
+
+      <!--22222222222222222222222222222-->
+      <div class="accordion accordion-flush" id="accordionFlushExample2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsetwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <app-detaille-mvt-article
+                class="custom-width"
+              ></app-detaille-mvt-article>
+            </button>
+          </h2>
+          <div
+            id="flush-collapsetwo"
+            class="collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample2"
+            style="max-height: 300px; overflow-y: scroll"
+          >
+            <div class="accordion-body">
+              <app-detail-mvt-stk></app-detail-mvt-stk>
+              <app-detail-mvt-stk></app-detail-mvt-stk>
+              <app-detail-mvt-stk></app-detail-mvt-stk>
+              <app-detail-mvt-stk></app-detail-mvt-stk>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-12 text-center p-1">
+        <div class="text-center">
+          <app-pagination></app-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

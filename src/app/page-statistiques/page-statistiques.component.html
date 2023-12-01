@@ -1,1 +1,51 @@
-salut 
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-4 mb-4 pl-2">
+            <!-- Section Articles -->
+            <h2 class="text-primary">Nombre Articles</h2>
+            <div class="circle-card pl-2">
+                <div class="circle-bg circle-bg-articles">
+                    <div class="circle-content">
+                        <h3>{{ numberOfArticles }}</h3>
+                        <p>Articles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <!-- Section Categories -->
+            <h2 class="text-success">Nombre Categories</h2>
+            <div class="circle-card">
+                <div class="circle-bg circle-bg-categories">
+                    <div class="circle-content">
+                        <h3>{{ numberOfCategories }}</h3>
+                        <p>Categories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <!-- Section Users -->
+            <h2 class="text-danger">Nombre d'utilisateurs</h2>
+            <div class="circle-card mr-0 pr-0">
+                <div class="circle-bg circle-bg-users">
+                    <div class="circle-content">
+                        <h3>{{ numberOfUsers }}</h3>
+                        <p>Users</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <h2 style="color: skyblue;">Nombre d'article par Categorie:</h2>
+</div>
+<div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <canvas #myCanvas></canvas>
+      </div>
+    </div>
+    </div>

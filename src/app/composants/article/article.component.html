@@ -1,1 +1,28 @@
-<p>article works!</p>
+<div class="col">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Liste des articles</h1>
+    </div>
+    <div class="col-md-4 text"><app-buttons (clickEvent)="nouveauArticle()">
+     
+    </app-buttons></div>
+  </div>
+  <div class="col m-3">
+    <!--    <app-detail-article></app-detail-article>
+    <app-detail-article></app-detail-article>
+    <app-detail-article></app-detail-article>
+    <app-detail-article></app-detail-article>-->
+    <div *ngFor="let article of articlesList">
+      <app-detail-article [article]="article"></app-detail-article>
+    </div>
+   
+  </div>
+  <div class="row mb-3">
+    <div class="col-md-12 text-center p-1">
+      <div class="text-center">
+        <app-pagination></app-pagination>
+      </div>
+      
+    </div>
+  </div>
+</div>

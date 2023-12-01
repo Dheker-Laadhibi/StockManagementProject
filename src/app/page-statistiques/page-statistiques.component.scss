@@ -1,0 +1,52 @@
+.circle-card {
+    text-align: center;
+  }
+  
+  .circle-bg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .circle-content {
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .circle-bg-articles {
+    background-color: #3498db; /* Couleur pour les articles */
+  }
+  
+  .circle-bg-categories {
+    background-color: #2ecc71; /* Couleur pour les catégories */
+  }
+  
+  .circle-bg-users {
+    background-color: #e74c3c; /* Couleur pour les utilisateurs */
+  }
+  
+  .circle-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    background-size: cover;
+    filter: blur(5px); /* Effet de flou pour l'image de fond */
+    z-index: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .circle-bg:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+  }
+  

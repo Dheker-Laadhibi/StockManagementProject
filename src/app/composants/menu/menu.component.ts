@@ -45,7 +45,7 @@ sousMenu:[
   id:'2',
   titre:'articles',
   icon:'',
-  url:'',
+  url:'articles',
 // sub menu of article 
   sousMenu:[
     {
@@ -59,7 +59,7 @@ sousMenu:[
       id:'22',
       titre:'mouvement de stock',
       icon:'',
-      url:'',
+      url:'mvt',
   
     }
 
@@ -71,21 +71,21 @@ sousMenu:[
   id:'3',
   titre:'clients',
   icon:'',
-  url:'',
+  url:'clients',
 // sub menu of client 
   sousMenu:[
     {
       id:'31',
       titre:'clients  ',
       icon:'',
-      url:'',
+      url:'clients',
   
     },
     {
       id:'32',
-      titre:'commande clients ',
+      titre:'commandeclients ',
       icon:'',
-      url:'',
+      url:'CommandeClient',
   
     }
 
@@ -98,21 +98,21 @@ sousMenu:[
   id:'4',
   titre:'fournisseur',
   icon:'',
-  url:'',
+  url:'fourni',
 // sub menu of fournisseur
   sousMenu:[
     {
       id:'41',
       titre:'Fournisseurs  ',
       icon:'',
-      url:'',
+      url:'fourni',
   
     },
     {
       id:'42',
       titre:'Commande Fournisseurs ',
       icon:'',
-      url:'',
+      url:'commandeFournisseur',
   
     }
 
@@ -131,14 +131,14 @@ sousMenu:[
       id:'51',
       titre:'Categories  ',
       icon:'',
-      url:'',
+       url:'lisetCategories',
   
     },
     {
       id:'52',
       titre:'Utilisateurs',
       icon:'',
-      url:'',
+      url:'ListeUsers',
   
     }
 
@@ -165,7 +165,7 @@ constructor(private router:Router){
 
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
 

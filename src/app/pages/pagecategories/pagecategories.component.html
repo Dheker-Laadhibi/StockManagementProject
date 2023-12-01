@@ -1,0 +1,40 @@
+<div class="col">
+    <div class="row">
+      <div class="col-md-8">
+       
+      </div>
+      <div class="col-md-4 text"><app-buttons (clickEvent)="nouvelleCategorie()">
+       
+      </app-buttons></div>
+    </div>
+    <div class="col m-3">
+      <!--    <app-detail-article></app-detail-article>
+      <app-detail-article></app-detail-article>
+      <app-detail-article></app-detail-article>
+      <app-detail-article></app-detail-article>-->
+     
+      <div class="container">
+        <h2>Listes des Categories </h2>
+        <ul class="responsive-table"  *ngFor="let categorie of categories"
+       >
+          <li class="table-header">
+            <div class="col col-1"></div>
+            <div class="col col-2">CodeCategorie</div>
+            <div class="col col-3">Designation</div>
+            
+          </li>
+
+          <li class="table-row">
+            <div class="col col-1" data-label="Job Id"></div>
+            <div class="col col-2" data-label="Customer Name">{{categorie.codecategorie}}</div>
+         
+            <div class="col col-4" data-label="Payment Status">{{categorie.designation}}</div>
+          </li>
+       
+        
+        </ul>
+      </div>
+    </div>
+  
+  </div>
+  
